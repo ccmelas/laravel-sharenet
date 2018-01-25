@@ -1,5 +1,5 @@
 {
-    "name": "melas/sharenet",
+    "name": "ccmelas/laravel-sharenet",
     "description": "A Laravel Package for Sharenet",
     "keywords": [
         "laravel", "notifications", "custom notifications",
@@ -11,20 +11,29 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^6.5",
-        "phpunit/php-code-coverage": "^5.3",
         "mockery/mockery": "^1.0"
     },
     "license": "MIT",
     "authors": [
         {
             "name": "Chiemela Chinedum",
-            "email": "chiemelachinedum@gmail.com"
+            "email": "chiemelachinedum@gmail.com",
+            "homepage": "https://github.com/ccmelas",
+            "role": "developer"
         }
     ],
     "autoload": {
         "psr-4": {
             "Melas\\Sharenet\\": "/src"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Melas\\Sharenet\\Test\\": "/tests"
+        }
+    },
+    "scripts": {
+        "test": "../../../vendor/bin/phpunit"
     },
     "minimum-stability": "dev"
 }
