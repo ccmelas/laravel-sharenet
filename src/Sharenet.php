@@ -7,6 +7,7 @@
 namespace Melas\Sharenet;
 
 use GuzzleHttp\Client;
+use Melas\Sharenet\Exceptions\MissingKeyException;
 
 class Sharenet
 {
@@ -46,6 +47,9 @@ class Sharenet
      */
     private function setKey()
     {
+        if (!$userKey = config('sharenet.secret'))
+            throw new MissingKeyException("Please provide an API Key");
+
         $this->key = config('sharenet.secret');
     }
 
