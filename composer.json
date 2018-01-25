@@ -6,7 +6,8 @@
         "sharenet", "SMS", "messaging"
     ],
     "require": {
-        "illuminate/support": "^5.5"
+        "illuminate/support": "^5.5",
+        "guzzlehttp/guzzle": "~6.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.5",
@@ -20,5 +21,10 @@
             "email": "chiemelachinedum@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Melas\\Sharenet\\": "/src"
+        }
+    },
     "minimum-stability": "dev"
 }
