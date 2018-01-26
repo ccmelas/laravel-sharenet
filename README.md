@@ -15,6 +15,7 @@ Then run:
 composer update
 ```
 
+If your project is using Laravel 5.5 upwards, you can skip the next two instructions in this section and jump straight to *Configuration*.
 In the providers array of `config/app.php`, add the following line:
 ```
 Melas\Sharenet\SharenetServiceProvider::class
