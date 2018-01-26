@@ -9,7 +9,7 @@ In the root folder of your laravel installation, run the following
 composer require ccmelas/laravel-sharenet
 ```
 
-In the providers array of `app/config.php`, add the following line:
+In the providers array of `config/app.php`, add the following line:
 ```
 Melas\Sharenet\SharenetServiceProvider::class
 ```
