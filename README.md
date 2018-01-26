@@ -4,9 +4,15 @@ A Laravel Package for sending SMS using Sharenet (Nigeria only)
 
 ## Installation
 
-In the root folder of your laravel installation, run the following
-```BASH
-composer require ccmelas/laravel-sharenet
+In the composer.json folder in the root of your laravel installation, add the following in the require block
+```
+    "ccmelas/laravel-sharenet": "dev-master"
+```
+
+Then run:
+
+```
+composer update
 ```
 
 In the providers array of `config/app.php`, add the following line:
